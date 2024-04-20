@@ -209,8 +209,8 @@ ul .lista .iconos {
 @media celular {
   .cuerpo {
     width: 100%;
-    position: relative;
     overflow-x: hidden;
+    position: absolute;
   }
 }
 
@@ -1161,6 +1161,11 @@ body {
   .container .carousel {
     width: 25rem;
     height: 35rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container .carousel {
+    margin-bottom: 1rem;
   }
 }
 .container .carousel .img {
