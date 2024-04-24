@@ -26,13 +26,27 @@
 
  
   .primero:hover{
-      font-weight: bolder;
+  font-weight: bolder;
   }
+
+  .section__items{
+  display: flex;
+  justify-content: space-around;
+  }
+
+  @media only screen and (max-width: 576px){
+
+  .row{
+  --bs-gutter-x: 0rem;
+  }
+  }
+
+
 </style>
 </head>
+<body>   
 
 
-<div class="cuerpo">
   <div class="container-fluid">
     <div class="row d-flex justify-content-between">
       
@@ -77,16 +91,13 @@
       </nav>
     </div>
   </div>
-</div>
 
 
-<div class="row container-fluid main">  
+
+        <img src="./imagnes/diseno.png" class="diseno" alt="fondo">
+   
+
   
-  <div class="main__image col container-fluid">  
-        <img src="./imagnes/diseno.png" class=" container-fluid  mx-auto d-block diseno" alt="fondo">
-    </div>  
-
-</div>  
 
   
 
@@ -96,19 +107,19 @@
 
 
 <div class="row section">
-    <div class="row section__items">
+    <div class="col section__items">
         
-        <div class="col">
+      
           <img src="./imagnes/panel1.jpeg" class="panel " alt="panel">
-        </div>
         
-        <div class="col">
+        
+      
           <img src="./imagnes/panel2.jpeg" class="panel" alt="panel">
-        </div>
+       
         
-        <div class="col">
+     
           <img src="./imagnes/panel3.jpeg" class="panel" alt="panel">
-        </div>
+     
         
       </div>
     </div>                     
