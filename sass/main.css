@@ -313,6 +313,11 @@ body {
   justify-content: center;
   gap: 15rem;
 }
+@media screen and (max-width: 1024px) {
+  .article {
+    gap: 9rem;
+  }
+}
 @media screen and (max-width: 768px) {
   .article {
     height: auto;
@@ -540,7 +545,7 @@ ul .lista .iconos {
 
 @media screen and (max-width: 576px) {
   .clientes .img-1 {
-    margin: 0% 32%;
+    margin: 0% auto;
   }
 }
 
@@ -550,7 +555,7 @@ ul .lista .iconos {
 }
 @media screen and (max-width: 576px) {
   .clientes .img-2 {
-    margin: 0% 31%;
+    margin: auto;
     margin-top: -0.5rem;
   }
 }
@@ -560,7 +565,8 @@ ul .lista .iconos {
 }
 @media screen and (max-width: 576px) {
   .clientes .img-3 {
-    margin: 0% 28%;
+    display: flex;
+    margin: auto;
   }
 }
 
@@ -570,7 +576,8 @@ ul .lista .iconos {
 }
 @media screen and (max-width: 576px) {
   .clientes .img-4 {
-    margin: 0% 26%;
+    display: flex;
+    margin: auto;
   }
 }
 
