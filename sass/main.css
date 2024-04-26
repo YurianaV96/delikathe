@@ -939,9 +939,9 @@ body {
 
 @media screen and (max-width: 1024px) {
   .footer {
-    bottom: 3rem;
-    position: static;
+    position: fixed;
     width: 100%;
+    bottom: 0;
   }
 }
 
