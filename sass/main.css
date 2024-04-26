@@ -659,6 +659,11 @@ ul .lista .iconos {
     flex-direction: column;
   }
 }
+@media screen and (max-width: 1024px) {
+  .empresa {
+    padding-bottom: 10%;
+  }
+}
 .empresa .segmento-1 {
   background-image: radial-gradient(circle farthest-corner at 10% 20%, rgb(0, 152, 155) 0.1%, rgb(0, 94, 120) 94.2%);
   color: white;
