@@ -71,7 +71,7 @@ ul .lista .iconos {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
-  width: 100vh;
+  width: 100%;
   gap: 8rem;
 }
 @media screen and (max-width: 576px) {
@@ -112,14 +112,6 @@ ul .lista .iconos {
     height: 2.5rem;
     display: flex;
     gap: 0.5rem;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .footer__lista {
-    padding-left: 0rem;
-    display: flex;
-    gap: 1rem;
   }
 }
 
@@ -202,7 +194,7 @@ ul .lista .iconos {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
-  width: 100vh;
+  width: 100%;
   gap: 8rem;
 }
 @media screen and (max-width: 576px) {
@@ -243,14 +235,6 @@ ul .lista .iconos {
     height: 2.5rem;
     display: flex;
     gap: 0.5rem;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .footer__lista {
-    padding-left: 0rem;
-    display: flex;
-    gap: 1rem;
   }
 }
 
@@ -370,7 +354,7 @@ body {
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    padding-bottom: 4.5rem;
+    padding-bottom: 12rem;
     margin-top: 4.5rem;
   }
 }
@@ -466,7 +450,7 @@ ul .lista .iconos {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
-  width: 100vh;
+  width: 100%;
   gap: 8rem;
 }
 @media screen and (max-width: 576px) {
@@ -507,14 +491,6 @@ ul .lista .iconos {
     height: 2.5rem;
     display: flex;
     gap: 0.5rem;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .footer__lista {
-    padding-left: 0rem;
-    display: flex;
-    gap: 1rem;
   }
 }
 
@@ -657,11 +633,6 @@ ul .lista .iconos {
   .empresa {
     display: flex;
     flex-direction: column;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .empresa {
-    padding-bottom: 10%;
   }
 }
 .empresa .segmento-1 {
@@ -820,7 +791,7 @@ ul .lista .iconos {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
-  width: 100vh;
+  width: 100%;
   gap: 8rem;
 }
 @media screen and (max-width: 576px) {
@@ -864,14 +835,6 @@ ul .lista .iconos {
   }
 }
 
-@media screen and (max-width: 1024px) {
-  .footer__lista {
-    padding-left: 0rem;
-    display: flex;
-    gap: 1rem;
-  }
-}
-
 .footer__tittle p {
   font-family: "Lora", serif;
   font-weight: bold;
@@ -880,8 +843,7 @@ ul .lista .iconos {
 /* aqui termina footer */
 /* aqui empieza seccion contacto */
 body {
-  position: relative;
-  min-height: 100vh;
+  position: absolute;
 }
 
 .flash {
@@ -894,25 +856,23 @@ body {
 }
 
 .caja {
-  margin-top: 6.5%;
-}
-@media screen and (max-width: 1024px) {
-  .caja {
-    margin: 20% auto;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 85vh;
 }
 @media screen and (max-width: 576px) {
   .caja {
-    margin-top: 11rem;
+    padding-bottom: 10rem;
+    height: 90vh;
   }
 }
 
 .formulario {
   background-color: white;
-  padding: 2rem;
+  padding: 1rem;
   border-radius: 3%;
-  margin-top: 6rem;
-  margin-bottom: 6rem;
 }
 @media screen and (max-width: 576px) {
   .formulario {
@@ -935,14 +895,6 @@ body {
 .formulario .form-check-input:active {
   background-color: black;
   border-radius: none;
-}
-
-@media screen and (max-width: 1024px) {
-  .footer {
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-  }
 }
 
 /* aqui termina la seccion contacto */
@@ -1019,7 +971,7 @@ ul .lista .iconos {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
-  width: 100vh;
+  width: 100%;
   gap: 8rem;
 }
 @media screen and (max-width: 576px) {
@@ -1063,14 +1015,6 @@ ul .lista .iconos {
   }
 }
 
-@media screen and (max-width: 1024px) {
-  .footer__lista {
-    padding-left: 0rem;
-    display: flex;
-    gap: 1rem;
-  }
-}
-
 .footer__tittle p {
   font-family: "Lora", serif;
   font-weight: bold;
@@ -1078,6 +1022,10 @@ ul .lista .iconos {
 
 /* aqui termina footer */
 /* aqui empieza la seccion de dulces tentaciones */
+body {
+  position: absolute;
+}
+
 .aviso {
   display: flex;
   flex-direction: row;
@@ -1287,7 +1235,7 @@ ul .lista .iconos {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
-  width: 100vh;
+  width: 100%;
   gap: 8rem;
 }
 @media screen and (max-width: 576px) {
@@ -1331,14 +1279,6 @@ ul .lista .iconos {
   }
 }
 
-@media screen and (max-width: 1024px) {
-  .footer__lista {
-    padding-left: 0rem;
-    display: flex;
-    gap: 1rem;
-  }
-}
-
 .footer__tittle p {
   font-family: "Lora", serif;
   font-weight: bold;
@@ -1346,11 +1286,6 @@ ul .lista .iconos {
 
 /* aqui termina footer */
 /* aqui comienza la seccion tips pasteleros */
-body {
-  position: relative;
-  min-height: 100vh;
-}
-
 .container .carousel {
   display: flex;
   flex-direction: row;
@@ -1378,8 +1313,9 @@ body {
 }
 .container .carousel .img {
   width: 60rem;
-  padding-top: 2rem;
+  padding-top: 2.6rem;
   height: 31rem;
+  margin-top: 0.5rem;
 }
 @media screen and (max-width: 768px) {
   .container .carousel .img {
@@ -1397,14 +1333,6 @@ body {
 }
 @media screen and (max-width: 1024px) {
   .container .carousel .img {
-    width: auto;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .footer {
-    bottom: 0;
-    position: absolute;
     width: 100%;
   }
 }
