@@ -1,0 +1,67 @@
+@import "./media";
+@import "./nav";
+@import "./footer";
+
+/* aqui comienza la seccion tips pasteleros */
+
+
+
+
+
+
+.container{
+    .carousel{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 48%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+
+    @include movil{
+    width: 25rem;
+    height: 35rem;
+    }
+
+    @include tablet{
+    margin-bottom: 1rem;
+    }
+
+    @include max{
+    margin-bottom: 11%;
+    margin-top: 2rem;
+    }
+
+
+        .img{
+        width: 60rem;
+        padding-top: 2.6rem;
+        height: 31rem;
+        margin-top: 0.5rem;
+      
+
+        @include tablet{
+            width: 100%;
+            height: 24rem;
+            margin-top: 3rem;
+
+        }
+
+        @include movil{
+            width: 100%;
+            height: 21rem;
+            margin-top: 3rem;
+        }
+
+        @include max{
+            width: 100%;
+     
+        }
+        }        
+    }
+    
+}
+
+
+
+/* aqui termina la seccion tips pasteleros */

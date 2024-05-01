@@ -1,0 +1,238 @@
+@import "./media";
+@import "./variables";
+@import "./nav";
+@import "./footer";
+
+
+/* aqui empieza la seccion de empresa */
+
+$text:white 10px 0px 15px; 
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+ul{
+    .lista{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 35rem;
+
+        .iconos{
+        width: $redes-width;
+        height: $redes-heigth;    
+             
+            @include tablet{
+            display: none;
+            }
+
+        }
+    }
+}
+
+
+.clientes{
+    margin-top: 5rem;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    @include movil{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+
+        @for $i from 1 through 4{
+        .img-#{$i} {
+            height: 20rem;
+            width:17rem;
+            box-shadow: 5px 5px 15px #053b50;
+            border-radius: 8%;
+
+
+        @include  tablet{
+        height: 15rem;
+        width: 11rem;
+        }
+        }
+        }
+
+}
+
+.clientes{
+    .img-1{
+        @include movil{
+        display: flex;
+        margin: auto;
+        }
+
+    }
+}
+
+
+.clientes{
+    
+
+    .img-2{
+    margin-top: 2rem;
+    margin-left: -1.5rem;
+
+    @include movil{
+    display: flex;
+    margin: auto;
+    margin-top: -0.5rem;
+    }
+    }
+}
+
+
+.clientes{
+     
+    .img-3{
+    margin-left: -1rem;    
+
+    @include movil{
+    display: flex;
+        margin: auto;
+    }
+    }
+} 
+
+.clientes{
+
+    .img-4{    
+    margin-left: -1rem;
+    margin-top: -1.7rem;
+
+    @include movil{
+    display: flex;
+    margin: auto;
+    }
+    }
+    
+}
+
+.empresa{
+display: flex;
+flex-direction: row;
+
+@include movil{
+display: flex;
+flex-direction: column;
+}
+
+
+    
+    .segmento-1{
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(0,152,155,1) 0.1%, rgba(0,94,120,1) 94.2% );
+    color: white;
+    width: 50%;
+    margin-top: 6rem;
+    padding: 1.8rem;
+
+    @include movil{
+    width: 100%;
+    }
+        
+        .gift1{
+        width: 4rem;
+        height: 4rem;
+        margin-bottom: 0.5rem;
+        display: block;
+        justify-content: center;
+        border-radius: 48%;
+        }
+    }
+}
+
+
+.empresa{
+
+    .segmento-2{
+    margin-top: 5rem;
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(0,152,155,1) 0.1%, rgba(0,94,120,1) 94.2% );
+    padding: 1rem;
+    color: white;
+    width: 50%;    
+    margin-bottom: 1rem;
+
+    @include movil{
+    width: 100%;
+    }
+
+        .gift1{
+        width: 4rem;
+        height: 4rem;
+        text-align: center;
+        margin-bottom: 0.5rem;
+        border-radius: 48%;                
+        }
+    }
+}
+
+.empresa{
+
+    .segmento-1{
+
+        .text-center-m{
+        font-size: 1.6rem;
+        font-family: 'Lora', serif;
+
+        @include tablet{
+            font-size: 1.5rem;
+        }
+        }
+    }
+}
+
+.empresa{
+
+    .segmento-1{
+
+        .text-center-s{
+        font-size: 1.3rem;
+        font-family: 'Lora', serif;
+
+        @include tablet{
+        font-size: 1.1rem;
+        }
+        }
+    }
+}
+
+
+.empresa{
+    .segmento-2{
+        .text-center-m{
+            font-size: 1.6rem;
+            font-family: 'Lora', serif; 
+
+        @include tablet{
+            font-size: 1.5rem;
+        }
+        }
+    }
+}
+
+.empresa{
+
+    .segmento-2{
+
+        .text-center-s{
+        font-size: 1.3rem;
+        font-family: 'Lora', serif;
+        
+        @include tablet{
+            font-size: 1.1rem;
+        }
+        }
+    }
+}
+
+/* aqui termina laa seccicon de empresa */

@@ -1,0 +1,75 @@
+@import  "./media";
+
+/* aqui empieza footer */
+
+
+.footer{
+    box-shadow: 2rem 2rem 2rem 2.3rem  beige;
+    background-color: whitesmoke;
+
+    @include tablet{
+    margin-top: auto;
+    width: 100%;
+    }
+    
+        &__bloque{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        width: 100%;
+        gap: 8rem;
+    
+        @include movil{
+            gap: 0rem;
+        }
+    
+        @include tablet{
+            margin-left: 0rem;
+            gap: 3rem;
+        }
+    
+            .icono{
+            width: $redes-width;
+            height: $redes-heigth;
+            background-color: #e2e3e5 ;
+            color: black;
+            width: 100%;
+            margin-left: 1rem;
+            margin-bottom: 1rem;
+            margin-top: 1rem;
+            visibility: hidden;
+                    
+            @include tablet{
+            visibility: visible;
+            width: 2.5rem;
+            height: 2.5rem;
+            margin-left: 0rem;
+            margin-bottom: 0rem;
+            }
+
+            @include max{
+            visibility: visible;
+            width: 2.5rem;
+            height: 2.5rem;
+            display: flex;
+            gap: 0.5rem;
+            }
+            }    
+        }
+    }
+    
+    .footer{
+       
+        &__tittle{
+    
+            p{
+            font-family: 'Lora', serif;
+            font-weight: bold;
+    
+            }
+        }
+    }
+    
+    
+/* aqui termina footer */

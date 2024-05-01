@@ -1,0 +1,80 @@
+@import "./media";
+
+/* EMPIEZA EL NAV */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+width: 100%;
+
+    .segundo{      
+        font-family: 'Lora', serif;
+        margin-left: 1rem;
+    }
+}
+
+
+ul{
+    li{
+        .magdalena{
+        width: 1rem;
+        height: 1.5rem;
+        margin-left: 1rem;
+        }
+    }
+}
+
+
+ul{
+
+    .primero{
+    font-family: 'Lora', serif;
+
+        .primero:hover{
+            border-bottom: solid 2px;
+            color: black ;
+            font-weight: bolder;
+        }
+    }
+}
+
+
+
+ul{
+    .lista{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 35rem;
+
+        .iconos{
+        width: $redes-width;
+        height: $redes-heigth;    
+             
+            @include tablet{
+            display: none;
+            }
+
+            @include max{
+            display: none;
+
+            }
+
+        }
+    }
+}
+
+.navbar{
+    
+    .navbar-collapse{
+
+        @include tablet{
+        width: 100%;
+        }
+    }
+}
+
+/*TERMINA EL NAV */
